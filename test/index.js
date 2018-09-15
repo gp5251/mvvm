@@ -60,9 +60,10 @@ describe('test MVVM', function() {
         m.a = 10;
         expect(data.a).to.equal(10);
 
-        it('it will influence the computed value', function() {
-            expect(data.d).to.equal(data.a + data.b);
-        });
+    });
+
+    it('it will influence the computed value', function() {
+        expect(data.d).to.equal(data.a + data.b);
     });
 });
 

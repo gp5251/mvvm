@@ -82,7 +82,7 @@ class Observer{
             },
             set(newValue) {
                 if (value !== newValue) {
-                    console.log(key, 'changed to', newValue);
+                    // console.log(key, 'changed to', newValue);
 
                     if (Array.isArray(newValue)) that.patchArray(newValue, dep);
 
